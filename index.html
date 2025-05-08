@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <script>
+    const countries = [
+      {
+        name: "Japan",
+        flag: "https://flagcdn.com/w80/jp.png",
+      },
+      {
+        name: "Dutch",
+        flag: "https://flagcdn.com/w80/nl.png",
+      },
+      {
+        name: "Italian",
+        flag: "https://flagcdn.com/w80/it.png",
+      },
+      {
+        name: "German",
+        flag: "https://flagcdn.com/w80/de.png",
+      },
+      {
+        name: "French",
+        flag: "https://flagcdn.com/w80/fr.png",
+      },
+      {
+        name: "Spanish",
+        flag: "https://flagcdn.com/w80/es.png",
+      },
+      {
+        name: "English",
+        flag: "https://flagcdn.com/w80/gb.png",
+      },
+    ];
+    window.onload = function () {
+      const heroFooter = document.querySelector("#hero-footer");
+
+      heroFooter.innerHTML = countries
+        .map(
+          (country) =>
+            `
+  <div class="footer_div">
+  <img src="${country.flag}"/>
+  <span>${country.name}</span>
+  </div>
+  `
+        )
+        .join(" ");
+    };
+  </script>
+  <body>
+    <nav>
+      <img src="/images/logo.svg" alt="" />
+      <div class="drop_down">
+        SITE LANGUAGE: ENGLISH
+        <span>
+          <i class="fa-solid fa-angle-down fa-xl" style="color: #afafaf"></i>
+        </span>
+      </div>
+    </nav>
+    <section class="main_section">
+      <div class="hero">
+        <img src="/images//hero-img.svg" alt="" />
+        <div class="hero_headings">
+          <h3>The free, fun, and effective way to learn a language!</h3>
+          <div class="btns">
+            <button
+              style="
+                background-color: #58cc02;
+                color: white;
+                border: 1.8px solid #58cc02;
+                border-bottom: 4px solid #58a700;
+              "
+            >
+              GET STARTED
+            </button>
+            <button>I ALREADY HAVE AN ACCOUNT</button>
+          </div>
+        </div>
+      </div>
+      <div id="hero-footer"></div>
+    </section>
+    <section class="second-section">
+      <div class="second-section-col">
+        <div class="headings">
+          <h3>free. fun. effective.</h3>
+          <p>
+            Learning with Duolingo is fun, and<span>
+              research shows that it works! </span
+            >With quick, bite-sized lessons, you’ll earn points and unlock new
+            levels while gaining real-world communication skills.
+          </p>
+        </div>
+        <img src="/images/sec-sec-1.svg" alt="" />
+      </div>
+      <div class="second-section-col">
+        <img src="/images/sec-sec-2.svg" alt="" />
+        <div class="headings">
+          <h3>backed by science</h3>
+          <p>
+            We use a combination of research-backed teaching methods and
+            delightful content to create courses that effectively teach reading,
+            writing, listening, and speaking skills!
+          </p>
+        </div>
+      </div>
+      <div class="second-section-col">
+        <div class="headings">
+          <h3>stay motivated</h3>
+          <p>
+            We make it easy to form a habit of language learning with game-like
+            features, fun challenges, and reminders from our friendly mascot,
+            Duo the owl.
+          </p>
+        </div>
+        <img src="/images//sec-sec-3.svg" alt="" />
+      </div>
+      <div class="second-section-col">
+        <img src="/images/sec-sec-4.svg" alt="" />
+        <div class="headings">
+          <h3>personalized learning</h3>
+          <p>
+            Combining the best of AI and language science, lessons are tailored
+            to help you learn at just the right level and pace.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="third-section">
+     <div class="headings">
+      <div>
+        <h1>learn anytime,
+        </h1>
+          <span class="third-section-span">anywhere</span>
+      </div>
+      <div class="third-section-div">
+        <div class="inner-div">
+          <img src="/images/apple.svg" alt="">
+          <div>
+            <h4>Download on the</h4>
+            <h3>App Store</h3>
+          </div>
+        </div class="inner-div">
+        <div class="inner-div">
+          <img src="/images/playStore.svg" alt="">
+          <div>
+            <h4>Get it on</h4>
+            <h3>Google Play</h3>
+          </div>
+        </div>
+      </div>
+     </div>
+     <img src="/images//third-sec-bg.svg" alt="" class="bg-img">
+    </section>
+    <section class="fourth-section">
+      <div class="main-div">
+        <img src="/images//fourth-sec-hero.svg" alt="">
+        <div class="headings">
+          <img src="/images/fourth-sec-2.svg" alt="">
+          <button>TRY FOR 1 WEEK FREE</button>
+        </div>
+      </div>
+    </section>
+    <section class="second-section fifth" style="padding-top: 8rem;">
+      <div class="second-section-col">
+        <div class="headings">
+          <h3>duolingo english test</h3>
+          <p>
+            Our convenient, fast, and affordable English test integrates the
+latest assessment science and AI — empowering anyone to
+accurately test their English where and when they’re at their
+best.
+          </p>
+          <button style="width: 65%;">Certify your English</button>
+        </div>
+        <img src="/images/fifth-sec-1.svg" alt="" />
+      </div>
+      <div class="second-section-col">
+        <img src="/images/fifth-sec-2.svg" alt="" />
+        <div class="headings">
+          <h3>duolingo for schools</h3>
+          <p>
+            Teachers, we’re here to help you! Our free tools support your
+            students as they learn languages through the Duolingo app,
+            both in and out of the classroom.
+          </p>
+          <button style="width: 65%;">Get your class started</button>
+        </div>
+      </div>
+      <div class="second-section-col">
+        <div class="headings">
+          <h3>duolingo abc</h3>
+          <p>
+            From language to literacy! With fun phonics lessons and
+            delightful stories, Duolingo ABC helps kids ages 3–8 learn to
+            read and write — 100% free.
+          </p>
+          <button style="width: 65%;">Learn more about ABC</button>
+        </div>
+        <img src="/images//fifth-sec-3.svg" alt="" />
+      </div>
+      <div class="second-section-col">
+        <img src="/images/fifth-sec-4.svg" alt="" />
+        <div class="headings">
+          <h3>duolingo math</h3>
+          <p>
+            Our free, bite-sized approach — but for math! Fun lessons help
+            students get ahead in their math classes, while adults can brain
+            train to boost their mental math skills.
+          </p>
+          <button style="width: 65%;">Get better at Math</button>
+        </div>
+      </div>
+    </section>
+    <section class="third-section sixth">
+      <div class="headings">
+       <div>
+         <h1>learn anytime,
+         </h1>
+           <span class="third-section-span">anywhere</span>
+       </div>
+       <button>GET STARTED</button>
+      <img src="/images/sixth-sec-bg.svg" alt="" class="bg-img">
+     </section>
+     <section class="seventh-section">
+      <div class="footer">
+        <div class="innerDiv">
+          <h4>About us</h4>
+          <span>Courses</span>
+          <span>Mission</span>
+          <span>Approach</span>
+          <span>Efficacy</span>
+          <span>Team</span>
+          <span>Research</span>
+          <span>Careers</span>
+          <span>Brand guidelines</span>
+          <span>Store</span>
+          <span>Press</span>
+          <span>Investors</span>
+          <span>Contact us</span>
+        </div>
+      
+        <div class="innerDiv">
+          <h4>Products</h4>
+          <span>Duolingo</span>
+          <span>Duolingo for Schools</span>
+          <span>Duolingo English Test</span>
+          <span>Duolingo ABC</span>
+          <span>Duolingo Math</span>
+          <span>Podcast</span>
+          <span>Duolingo for Business</span>
+          <span>Super Duolingo</span>
+          <span>Gift Super Duolingo</span>
+        </div>
+      
+        <div class="innerDiv">
+          <h4>Apps</h4>
+          <span>Duolingo for Android</span>
+          <span>Duolingo for iOS</span>
+          <span>Duolingo ABC (iOS)</span>
+        </div>
+      
+        <div class="innerDiv">
+          <h4>Help and support</h4>
+          <span>Duolingo FAQs</span>
+          <span>Schools FAQs</span>
+          <span>Duolingo English Test FAQs</span>
+          <span>Status</span>
+        </div>
+      
+        <div class="innerDiv">
+          <h4>Privacy and terms</h4>
+          <span>Community guidelines</span>
+          <span>Terms</span>
+          <span>Privacy</span>
+          <span>Respecting your "do not sell my personal information" rights</span>
+          <div>
+            <h4>Social</h4>
+            <span>Blog</span>
+            <span>Instagram</span>
+            <span>Facebook</span>
+            <span>Twitter</span>
+            <span>YouTube</span>
+          </div>
+        </div>
+      
+      </div>
+      
+     </section>
+     <section class="eigth-section">
+      <div class="footer">
+        <div class="innerDiv">
+          <p>Site language:</p>
+        </div>
+        <div class="innerDiv">
+          <span>العربية</span>
+          <span>हिन्दी</span>
+          <span>Čeština</span>
+          <span>Deutsch</span>
+          <span>Ελληνικά</span>
+          <span>English</span>
+          <span>Español</span>
+          <span>Français</span>
+          <span>Magyar</span>
+          <span>Bahasa Indonesia</span>
+          <span>Italiano</span>
+          <span>Nederlands</span>
+          <span>Polski</span>
+          <span>Português</span>
+        </div>
+        <div class="innerDiv">
+          <span>Română</span>
+          <span>Русский</span>
+          <span>தமிழ்</span>
+          <span>ภาษาไทย</span>
+          <span>Tagalog</span>
+          <span>Türkçe</span>
+          <span>Українською</span>
+          <span>Tiếng Việt</span>
+          <span>Nederlands</span>
+          <span>Polski</span>
+          <span>Português</span>
+          <span>Română</span>
+          <span>Русский</span>
+          <span>తెలుగు</span>
+        </div>
+        <div class="innerDiv">
+          <span>ภาษาไทย</span>
+          <span>Tagalog</span>
+          <span>Türkçe</span>
+          <span>Українською</span>
+          <span>Tiếng Việt</span>
+          <span>中文</span>
+          <span>日本語</span>
+          <span>한국어</span>
+          <span>中文</span>
+        </div>
+      </div>
+      
+     </section>
+  </body>
+</html>
